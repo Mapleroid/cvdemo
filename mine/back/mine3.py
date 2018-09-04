@@ -304,4 +304,4 @@ def do_test():
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    do_test()
+    print find_mine()
