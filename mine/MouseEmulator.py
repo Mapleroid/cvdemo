@@ -105,7 +105,13 @@ if __name__ == "__main__":
     #cell_middle_click(hwnd_mine, mine_area, 2, 3)
     emulator = MouseEmulator(hwnd_mine, mine_area)
 
-    emulator.right_click(5,1)
+    for y in range(0,16):
+        for x in range(0,30):
+            emulator.right_click(x,y)
+            time.sleep(0.2)
+            #emulator.right_click(6,0)
+            #time.sleep(1)
+            #emulator.right_click(7,0)
 
 
     mem_dc.DeleteDC()
